@@ -23,7 +23,7 @@ export default {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  // coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -174,7 +174,7 @@ export default {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    '.+\\ts$': 'ts-jest'
+    '^.+\\.(ts|tsx)?$': 'ts-jest',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
